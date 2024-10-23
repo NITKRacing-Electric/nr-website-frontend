@@ -1,19 +1,15 @@
-import { useState } from 'react'
-import Contribution from './components/Contribution'
-import Newsletter from './components/Newsletter'
-import Team from './components/Team'
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
-
-
   return (
     <>
-      <Team />
-      <Newsletter />
-      <Contribution />
-     
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
